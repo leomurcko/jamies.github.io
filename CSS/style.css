@@ -1,0 +1,198 @@
+:root {
+    --color_primario: #fdca24;
+    --ligthprim:#fff48e;
+    --color_an: #ca2cf1;
+    
+    --color_ter:#aef1fa;
+    --coltex: rgb(68, 68, 68);
+    --coltex_blan:rgb(219, 219, 219);
+    --type: 'Poppins', sans-serif
+}    
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color:var(--color_primario);
+    font-size: 20;
+}
+
+header .logo {
+    width: 70%;
+    margin:auto;
+}
+
+header {
+    border-bottom:5px solid var(--color_an);
+    text-align: center;
+    background-color: var(--color_ter);
+    padding: 30px 10px;
+}
+
+header .menu {
+    margin-top:1.5em;
+}
+
+header .menu ul li {
+    display: inline;
+}
+
+header .menu ul li a{
+    color: #2c2f33;
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 7px 16px;
+    margin: 0px 10px;
+}
+
+header .menu ul li a:hover{
+    background-color: rgb(255, 176, 29);
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: 12px 7px 20px 0px rgb(153, 201, 245);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jamie{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    margin:1em;
+    gap: 1em;
+}
+
+img {
+    width: 60%;
+    height: auto;
+    margin: .25em solid var(--color_an);
+}
+
+
+.container .info ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.info{
+    background-color: rgb(243, 197, 255);
+    padding: 2.1em;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between; 
+}
+footer {
+    margin-top: 1em;
+    text-align: center;
+    background-color: var(--color_an);
+    padding: 30px 10px;
+}
+
+footer .menu {
+    margin-top: 18px;
+}
+
+footer .footer ul li {
+    display:inline;
+}
+
+footer .footer ul li a{
+    color: #2c2f33;
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 7px 16px;
+    margin: 0px 10px;
+}
+
+footer .footer ul li a:hover{
+    background-color: var(--color_ter);
+    border-radius: 200px 0px 200px 0px;
+    box-shadow: 12px 7px 20px 0px rgba(255,204,0,1);
+    color: var(--coltex);
+}
+
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    gap: 12px;
+    padding: 5em;
+}
+.feed {
+    background-color: var(--color_ter);
+}
+
+.colors {
+    flex-shrink: 3;
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 30%;
+
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+    body {
+        background-color:var(--color_an);
+        font-size: 2em;
+    }
+
+    header {
+        border-bottom:2px solid var(--color_an);
+        text-align: center;
+        background-color: var(--color_primario);
+        padding: 1em .7em;
+    }
+    header .menu ul li a{
+        color: #2c2f33;
+        background-color: #fff;
+        border-radius: 3em;
+        font-size: .8em;
+    }
+
+    header .menu ul li a:hover{
+        background-color: rgb(185, 255, 212);
+        border-radius: 100px 0px 100px 0px;
+        box-shadow: 12px 7px 20px 0px rgb(86, 172, 253);
+        color: #fff;
+    }
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+
+
+    body {
+        background-color:var(--ligthprim);
+        font-size: 1.3em;
+    }
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+  
+    body {
+        background-color:var(--color_ter);
+        font-size: .2em;
+    }
+
+}
